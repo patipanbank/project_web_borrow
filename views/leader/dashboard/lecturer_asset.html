@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LecturerAssetList</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/css/Lecturer/lecturer_asset.css" />
+    <link rel="stylesheet" href="/public/css/Lecturer/lecturer_sidebar.css" />
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="/views/leader/lecturer_sidebar.html"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-container">
+        <a href=""
+          ><img src="/public/img/mfu-logo.png" alt="MFU" height="100"
+        /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#" id="lechome"
+              ><i class="fa fa-bar-chart"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#" id="lecass"
+              ><i class="fa fa fa-list-alt"></i> Asset List</a
+            >
+          </li>
+          <li>
+            <a href="#" id="lecre"><i class="fa fa fa-list-alt"></i> Request</a>
+          </li>
+          <li>
+            <a href="#" id="lechis"><i class="fa fa-history"></i> History</a>
+          </li>
+          <li>
+            <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="table-responsive">
+          <!-- <div class="container"> -->
+            <h1 class="as mb-5">Asset List</h1>
+          <!-- </div> -->
+          <!-- Table -->
+          <div class="search-container">
+            <form onsubmit="searchProducts(); return false;">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter product name"
+              />
+              <button type="submit" class="Search btn btn-outline-primary">
+                Search
+              </button>
+            </form>
+          </div>
+          <div style="height: 20px"></div>
+          <table class="table table-striped table-hover table-bordered">
+            <thead class="">
+              <td>ID</td>
+              <td>Image</td>
+              <td>Name</td>
+            </thead>
+            <tbody id="tblProduct" class="product-rows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/public/js/leader/lec_ass.js"></script>
+</html>

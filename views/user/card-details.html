@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1 id="card-name"></h1>
+      <p id="card-description"></p>
+      <!-- เพิ่มองค์ประกอบอื่น ๆ สำหรับแสดงรายละเอียดของการ์ด -->
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const cardId = urlParams.get("id");
+
+      if (cardId) {
+        // ดึงข้อมูลการ์ดจากเซิร์ฟเวอร์โดยใช้ cardId
+        try {
+          const response = await fetch(`/get-card-details?id=${cardId}`);
+          if (response.ok) {
+            const cardData = await response.json();
+            // แสดงข้อมูลการ์ด
+            document.querySelector("#card-name").textContent = cardData.name;
+            document.querySelector("#card-description").textContent =
+              cardData.description;
+            // เพิ่มการแสดงผลรายละเอียดอื่น ๆ ของการ์ด
+          } else {
+            console.error("Failed to fetch card details");
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      }
+    });
+  </script>
+</html>

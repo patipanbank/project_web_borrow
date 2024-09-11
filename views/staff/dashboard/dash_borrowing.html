@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaffBorrowing</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/public/css/staff/dashboard/staff_borrowing.css"
+    />
+    <link rel="stylesheet" href="/public/css/Staff/staff_sidebar.css" />
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/public/css/Staff/staff_sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-container">
+        <a href=""
+          ><img src="/public/img/mfu-logo.png" alt="MFU" height="100"
+        /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/staffHomepage" id="staffhome"
+              ><i class="fa fa-bar-chart"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="staffAsset" id="staffass"
+              ><i class="fa fa fa-list-alt"></i> Asset List</a
+            >
+          </li>
+          <li>
+            <a href="/staffReturn" id="staffreturn"
+              ><i class="fa fa-reply"></i> Return</a
+            >
+          </li>
+          <li>
+            <a href="staffHistory" id="staffhis"
+              ><i class="fa fa-history"></i> History</a
+            >
+          </li>
+          <li>
+            <a href="/logout" id="rolepage"
+              ><i class="fa fa-sign-out"></i> Logout</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <h1>Borrowing</h1>
+    </div>
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered">
+            <thead>
+              <td>ID</td>
+              <td>Image</td>
+              <td>Name</td>
+              <td>Status</td>
+            </thead>
+            <tbody id="tblProduct" class="product-rows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="/public/js/staff/staff_borrowing.js"></script>
+
+  </body>
+</html>

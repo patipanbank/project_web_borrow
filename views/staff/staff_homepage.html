@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaffHomepage</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/public/css/Staff/staff_homepage.css" />
+    <link rel="stylesheet" href="/public/css/Staff/staff_sidebar.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-container">
+        <a href=""
+          ><img src="/public/img/mfu-logo.png" alt="MFU" height="100"
+        /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/staffHomepage" id="staffhome"
+              ><i class="fa fa-bar-chart"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="/staffAsset" id="staffass"
+              ><i class="fa fa fa-list-alt"></i> Asset List</a
+            >
+          </li>
+          <li>
+            <a href="/staffReturn" id="staffreturn"
+              ><i class="fa fa-reply"></i> Return</a
+            >
+          </li>
+          <li>
+            <a href="/staffHistory" id="staffHis"
+              ><i class="fa fa-history"></i> History</a
+            >
+          </li>
+          <li>
+            <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div>
+        <h1 class="container">Dashboard</h1>
+      </div>
+
+      <div class="container text-center mt-5">
+        <div class="widget" id="Asset-list" asset-href="/staffAsset">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="Asset_List"></h1>
+                <h6>Asset List</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa fa-list-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Available" ava-href="/staffAva">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="Availablea"></h1>
+                <h6>Available</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-check-square-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Disable" dis-href="/staffDis">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="Disablea"></h1>
+                <h6>Disable</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-window-close-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Return" re-href="/staffReturn">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="Returna"></h1>
+                <h6>Return</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-reply"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Borrowing" re-href="/staffBow">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="Borrowinga"></h1>
+                <h6>Borrowing</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-hourglass-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Add a canvas for the chart -->
+      <div class="container-fruid m-3">
+      <canvas
+        id="assetChart"
+        class="bg-white"
+        style="width: 400px; height: 150px"
+      ></canvas>
+    </div>
+    </div>
+
+    <script src="/public/js/staff/staff_homepage.js"></script>
+
+  </body>
+</html>

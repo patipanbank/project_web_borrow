@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StaffAvailable</title>
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/public/css/staff/dashboard/dash_available.css" />
+  <script src="/public/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/public/css/Staff/staff_sidebar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <a href=""><img src="/public/img/mfu-logo.png" alt="MFU" height="100" /></a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#" id="staffhome"><i class="fa fa-bar-chart"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#" id="staffass"><i class="fa fa fa-list-alt"></i> Asset List</a>
+        </li>
+        <li>
+          <a href="/staffReturn" id="staffreturn"
+            ><i class="fa fa-reply"></i> Return</a
+          >
+        </li>
+        <li>
+          <a href="#" id="staffhis"><i class="fa fa-history"></i> History</a>
+        </li>
+        <li>
+          <a href="#" id="rolepage"><i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h1>Available</h1>
+  </div>
+
+     <div class="content">
+      <div class="container-fluid">
+        <div class="table-responsive">
+          <table class="table table-light table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  
+ <script src="/public/js/staff/staff_available.js"></script>
+</html>

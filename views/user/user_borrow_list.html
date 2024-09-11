@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/css/users/user_borrow_list.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <title>UserBorrowList</title>
+  </head>
+
+  <body class="body">
+    <div class="topnav">
+      <img class="active" src="/public/img/mfu-logo.png" alt="" height="60" />
+      <a class="active" href="/userBorrowlist" id="borrow">Asset List</a>
+      <a href="/reQuest" id="requestt" class="request">Request Status</a>
+      <a type="button" id="logout" href="/logout">Logout</a>
+      <h4 id="user"></h4>
+      <div id="id"></div>
+
+      <!-- <img class="user-img" src="/public/img/icons.png" alt="" /> -->
+      <div class="icons">
+        <i class="fa fa-user"></i>
+      </div>
+    </div>
+
+    <!-- product cards -->
+    <div class="container" id="product-container">
+      <h1>SEARCH BOX</h1>
+      <form>
+        <input type="text" id="searchInput" placeholder="" />
+        <button type="button" id="searchbutton" class="searchbutton fa fa-search"></button>
+      </form>
+      <div class="row" id="product-row"></div>
+  </div>
+     <!-- Footer -->
+     <footer>
+      <div class="container-fruid">
+        <p>&copy; Asset borrow. Tel: 000-0000-000. Email: asset@borrow.mfu.com</p>
+      </div>
+    </footer>
+
+    <script src="/public/js/users/user_borrow_list.js"></script>
+  </body>
+</html>

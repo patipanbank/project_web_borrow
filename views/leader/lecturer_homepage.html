@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LecturerHomepage</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/css/Lecturer/lecturer_homepage.css" />
+    <link rel="stylesheet" href="/public/css/Lecturer/lecturer_sidebar.css" />
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-container">
+        <a href=""
+          ><img src="/public/img/mfu-logo.png" alt="MFU" height="100"
+        /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/lecturerHomepage" id="lechome"
+              ><i class="fa fa-bar-chart"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="lecAss" id="lecass"
+              ><i class="fa fa fa-list-alt"></i> Asset List</a
+            >
+          </li>
+          <li>
+            <a href="lecRe" id="lecre"
+              ><i class="fa fa fa-list-alt"></i> Request</a
+            >
+          </li>
+          <li>
+            <a href="lecHis" id="lechis"
+              ><i class="fa fa-history"></i> History</a
+            >
+          </li>
+          <li>
+            <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1 class="container">Dashboard</h1>
+      <div class="container text-center mt-5">
+        <div class="widget" id="Asset-list" asset-href="/lecAss">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="amountasset"></h1>
+                <h6>Asset List</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa fa-list-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Approve" app-href="/lecApp">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="amountapprove"></h1>
+                <h6>Approve</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-check-square-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Disapprove" dis-href="/lecDis">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="amountdisapprove"></h1>
+                <h6>Disapprove</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-window-close-o"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Request" re-href="/lecRe">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="amountrequest"></h1>
+                <h6>Request</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-spinner"></i>
+            </div>
+          </div>
+        </div>
+        <div class="widget" id="Returned" re-href="/lecReturned">
+          <div class="col">
+            <div class="d-flex">
+              <div class="text-white">
+                <h1 id="return"></h1>
+                <h6>Returned</h6>
+              </div>
+            </div>
+            <div class="icons">
+              <i class="fa fa-handshake-o"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container-fruid m-3">
+      <canvas
+        id="assetChart"
+        class="bg-white"
+        style="width: 400px; height: 150px"
+      ></canvas>
+    </div>
+  </div>
+
+    <script src="/public/js/leader/lec_home.js"></script>
+  </body>
+</html>

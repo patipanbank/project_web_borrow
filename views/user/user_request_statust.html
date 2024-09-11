@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UserRequestStatus</title>
+  <link rel="stylesheet" href="/public/css/users/user_request_status.css" />
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+  <script src="/public/js/bootstrap.bundle.min.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+</head>
+
+<body class="body">
+  <div class="topnav">
+    <img class="active" src="/public/img/mfu-logo.png" alt="" height="60" />
+    <a href="/userBorrowlist" id="assetListLink" class="asset">Asset List</a>
+    <a class="active" href="/reQuest" id="request">Request Status</a>
+    <a type="button" id="logout" href="/logout">Logout</a>
+    <h5 id="email"></h5>
+    <div id="id"></div>
+    <!-- <img class="user-img" src="/public/img/icons.png" alt="" /> -->
+    <div class="icons">
+      <i class="fa fa-user"></i>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container-fruid m-5">
+      <div class="table-responsive">
+        <h1 class="mt-5 mb-4">Request Status</h1>
+        <table class="table table-striped table-hover table-bordered">
+          <thead class="">
+            <td>Id</td>
+            <td>Image</td>
+            <td>Name</td>
+            <td>Borrowdate</td>
+            <td>Returndate</td>
+            <td>Status</td>
+            <td>Reason</td>
+          </thead>
+          <tbody id="tblProduct"></tbody>
+        </table>
+      </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; Asset borrow. Tel: 000-0000-000. Email: asset@borrow.mfu.com</p>
+    </div>
+  </footer>
+
+<script src="/public/js/users/user_request_status.js"></script>
+</body>
+
+</html>

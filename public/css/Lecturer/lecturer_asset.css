@@ -1,0 +1,105 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  url(/public/img/gg.png);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  height: 100%;
+  position: fixed;
+}
+
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  padding: 10px 0;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.content {
+  margin-left: 250px; /* Ensure content doesn't overlap sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  color: white;
+  
+}
+
+.widget {
+  background-color: gray;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  width: 150px;
+  background-color: gray;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.table {
+  background-color: white;
+}
+
+.Search {
+  background-color: white;
+}
+
+.as {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 0;
+  color: white;
+}

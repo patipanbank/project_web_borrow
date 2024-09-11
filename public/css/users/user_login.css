@@ -1,0 +1,207 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  /* background: linear-gradient(270deg, #343a40 30%, #92e3a9 100%); */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(/public/img/gg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px;
+  overflow: hidden;
+}
+
+.text-large {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.left-half {
+  flex: 4;
+  /* ให้ส่วนซ้ายยืดออกไปแบบเต็มรูป */
+  background-color: #333;
+  /* สีพื้นหลังส่วนซ้าย */
+  padding: 40px;
+  height: 80vh;
+  border-radius: 40px 0px 0 40px;
+  box-shadow: -10px 10px 15px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.no-underline {
+  text-decoration: none; /* Remove underline */
+  color: gray;
+}
+
+.form-control {
+  padding-left: 40px;
+  border: 2px solid #92e3a9;
+  /* Add a border with your preferred color */
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+
+.login_icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #92e3a9;
+}
+
+.form-control::placeholder {
+  color: #92e3a9;
+  /* Change the placeholder text color */
+}
+
+.btn-password {
+  background-color: transparent;
+  /* Make the button background transparent */
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Adjust the right position to place the button on the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+}
+
+.btn-password i {
+  font-size: 18px;
+  color: gray;
+}
+
+.btn-password:hover i {
+  color: #92e3a9;
+  /* Darker eye icon color on hover */
+}
+
+.right-half {
+  flex: 6;
+  background-color: #92e3a9;
+  height: 80vh;
+  border-radius: 0 40px 40px 0;
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-half h1 {
+  margin-bottom: -15px;
+  /* ปรับระยะห่างระหว่างข้อความ */
+}
+
+.right-half p {
+  margin-top: 15px;
+  /* ปรับระยะห่างระหว่างข้อความ */
+}
+
+/* .btnLogin {
+  background-color: #92e3a9;
+  color: black;
+  width: 300px;
+  height: 50px;
+  border: 0px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btnLogin:hover {
+  background-color: white;
+} */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnLogin {
+  display: inline-block;
+  padding: 10px 130px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  transition: background 0.3s ease;
+}
+
+.btnLogin:hover {
+  background: linear-gradient(45deg, #e52e71, #ff8a00);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  margin-top: -10px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-container {
+  margin-top: 50px;
+  display: flex;
+}
+
+.clickable-text {
+  cursor: pointer;
+  color: #92e3a9;
+}
+
+.clickable-text:hover {
+  color: white;
+}
+.fa {
+  cursor: pointer;
+  color: #92e3a9;
+}
+.fa:hover {
+  color: white;
+}
+.textback {
+  cursor: pointer;
+  color: #92e3a9;
+}
+.no-underline :hover {
+  color: white;
+}
